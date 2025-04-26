@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-side {
+    flex: 1;
+    background-image: url('fundoazul.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    max-width: 80%;
+  }
+  
+  .right-side {
+    flex: 1;
+    background-image: url('fundocinza.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .login-box {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    flex: 1;
+    width: 50%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    max-width: 50%;
+  }
+
+  .btn:first-child {
+    margin-right: 5px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .btn:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .btn.active {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .btn:not(.active) {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+  }
+  
+  .input-group small.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #333;
+  }
+  
+  .forgot {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .left-side {
+      height: 200px;
+    }
+    .right-side {
+      height: calc(100vh - 200px);
+    }
+  }
+  
